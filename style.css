@@ -1,0 +1,63 @@
+
+.page {
+	text-decoration:none;
+	color: white;
+	padding-left: 1em;
+	padding-right: 1em;
+	font-size: 1rem;
+	text-align: right;
+	
+}
+
+.page:hover {
+	background-color: white;
+	color: #292C7B;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+#quizPage {
+}
+
+.homePage {
+	margin: 0;
+	padding: 0;
+}
+
+.bigImage {
+	width:100%;
+	filter: brightness(50%);
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+	text-align:right;
+	padding: 1em;
+}
+
+nav {
+	background-color: #292C7B;
+	font-family: 'Lato', sans-serif;
+	text-align: right;
+	position:relative;
+	padding: 1em;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+body {
+	
+}
+
+.quiz {
+	position:relative;
+}
