@@ -96,3 +96,7 @@ body {
 	background-color: steelblue;
 	height:100%;
 }
+
+p {
+	display:inline-block;
+}
