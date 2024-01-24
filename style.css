@@ -9,7 +9,7 @@
 	
 }
 
-.page:hover {
+.page:hover, .selected {
 	background-color: white;
 	color: #292C7B;
 	padding: 1em;
