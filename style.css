@@ -1,3 +1,37 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	position: absolute;
+}
+
+.homePage {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	background-color: #292C7B;
+	font-family: 'Lato', sans-serif;
+	text-align: right;
+	position:relative;
+	padding: 2.25em;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+	text-align:right;
+	padding: 1em;
+}
 
 .page {
 	text-decoration:none;
@@ -6,7 +40,6 @@
 	padding-right: 1em;
 	font-size: 1rem;
 	text-align: right;
-	
 }
 
 .page:hover, .selected {
@@ -16,48 +49,74 @@
 	border-radius: 1em;
 }
 
-#quizPage {
-}
-
-.homePage {
-	margin: 0;
-	padding: 0;
-}
-
 .bigImage {
 	width:100%;
 	filter: brightness(50%);
 }
 
-li.nav {
-	list-style-type: none;
-	display: inline;
-	text-align:right;
-	padding: 1em;
+/* <-------------- US Language History CSS --------------> */
+
+main.contentGrid {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
 }
 
-nav {
-	background-color: #292C7B;
+.left_column, .right_column {
+	background-color:#00719c;
+}
+
+.ulh_content {
+	position: relative;
 	font-family: 'Lato', sans-serif;
-	text-align: right;
-	position:relative;
-	padding: 1em;
-	width: 100%;
-	box-sizing: border-box;
+	background-color:white;
+	height: auto;
 }
 
-html, body {
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
+.intro {
+	text-align: center;
+}
+
+.new_amsterdam {
+	width:100%;
+	filter: brightness(50%);
 }
 
 h1.title {
 	text-align: center;
 	justify-content: center;
 }
+
+.ulh_title {
+	position:absolute;
+	top: 5em;
+  	left: 50%;
+	z-index:0;
+  	transform: translate(-50%, -50%);
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	color:white;
+}
+
+.intro_text {
+	position:absolute;
+	left: 50%;
+	z-index: 0;
+  	transform: translate(-50%, -50%);
+	font-size: 1.25rem;
+	width:80%;
+	color:white;
+}
+
+.intro_divider {
+	justify-content: center;
+	margin:4em auto;
+	height:2px;
+	background-color:black;
+	width: 75%;
+	border-radius: 2px;
+}
+
+/* <-------------- Quiz CSS --------------> */
 
 .quiz {
 	position:relative;
