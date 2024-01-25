@@ -97,13 +97,19 @@ h1.title {
 }
 
 #myths {
-	background-color: rgb(0, 0, 255);
+	/*background-color: #595C9B;*/
 	height:100%;
+	/*color: white;*/
 }
 
 #facts {
-	background-color: steelblue;
+	/*background-color: #595C9B;*/
 	height:100%;
+	/*color:white;*/
+}
+
+.spacer {
+	background-color: #292C7B;
 }
 
 p {
