@@ -54,8 +54,9 @@ html, body {
 	position: absolute;
 }
 
-body {
-	
+h1.title {
+	text-align: center;
+	justify-content: center;
 }
 
 .quiz {
@@ -72,7 +73,15 @@ body {
 
 .grid-item {
 	display: inline-grid;
+	height: 100%;
 }
+
+.myth, .fact {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
 
 #quizGrid {
 	grid-template-columns: 20% 60% 20%;
