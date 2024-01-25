@@ -8,7 +8,6 @@ html, body {
 	margin: 0;
 	width: 100%;
 	height: auto;
-	position: absolute;
 }
 
 .homePage {
@@ -20,13 +19,13 @@ nav {
 	background-color: #292C7B;
 	font-family: 'Lato', sans-serif;
 	text-align: right;
-	position:relative;
+	position: relative;
 	padding: 2.25em;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-li {
+nav li {
 	list-style-type: none;
 	display: inline;
 	text-align:right;
@@ -66,54 +65,56 @@ main.contentGrid {
 }
 
 .ulh_content {
-	position: relative;
 	font-family: 'Lato', sans-serif;
 	background-color:white;
-	height: auto;
 }
 
-.intro {
+.intro_container {
+	position: relative;
 	text-align: center;
 }
 
 .new_amsterdam {
 	width:100%;
-	filter: brightness(50%);
-}
-
-h1.title {
-	text-align: center;
-	justify-content: center;
-}
-
-.ulh_title {
-	position:absolute;
-	top: 5em;
-  	left: 50%;
-	z-index:0;
-  	transform: translate(-50%, -50%);
-	text-decoration: underline;
-	text-underline-offset: 10px;
-	color:white;
+	filter: brightness(70%);
 }
 
 .intro_text {
 	position:absolute;
-	left: 50%;
-	z-index: 0;
-  	transform: translate(-50%, -50%);
-	font-size: 1.25rem;
-	width:80%;
+	top:5%;
+	left:5%;
+	width:90%;
+	height:90%;
+	z-index:0;
+	background-color:black;
+	filter: opacity(50%);
 	color:white;
+	justify-content: center;
+}
+
+.title {
+	margin-top: 15%;
+	margin-bottom: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	font-size:3rem;
+}
+
+.intro_info {
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 .intro_divider {
-	justify-content: center;
-	margin:4em auto;
-	height:2px;
+	position:relative;
 	background-color:black;
-	width: 75%;
-	border-radius: 2px;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
 }
 
 /* <-------------- Quiz CSS --------------> */
