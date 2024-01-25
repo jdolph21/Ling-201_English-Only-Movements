@@ -61,46 +61,53 @@ main.contentGrid {
 	grid-template-columns: 10% 80% 10%;
 }
 
-li.nav {
-	list-style-type: none;
-	display: inline;
-	text-align:right;
-	padding: 1em;
-
-}
-
 .left_column, .right_column {
 	background-color:#00719c;
 }
 
 .ulh_content {
+	position: relative;
 	font-family: 'Lato', sans-serif;
 	background-color:white;
 	height: auto;
 }
 
-.ulh_title {
-	position:relative;
-	top: 1em;
+.intro {
 	text-align: center;
+}
+
+.new_amsterdam {
+	width:100%;
+	filter: brightness(50%);
+}
+
+.ulh_title {
+	position:absolute;
+	top: 5em;
+  	left: 50%;
+	z-index:0;
+  	transform: translate(-50%, -50%);
 	text-decoration: underline;
 	text-underline-offset: 10px;
-	margin-bottom:3em;
+	color:white;
 }
 
 .intro_text {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+	position:absolute;
+	left: 50%;
+	z-index: 0;
+  	transform: translate(-50%, -50%);
+	font-size: 1.25rem;
 	width:80%;
+	color:white;
 }
 
 .intro_divider {
 	justify-content: center;
-	margin:5em auto;
-	height:1.5px;
-	background-color: #D3D3D3;
-	width: 85%;
+	margin:4em auto;
+	height:2px;
+	background-color:black;
+	width: 75%;
 	border-radius: 2px;
 }
 
