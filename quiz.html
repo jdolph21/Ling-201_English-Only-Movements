@@ -13,10 +13,10 @@
   <header>
     <nav>
       <ul>
-        <li><a class="page" href="index.html"><b>Home</b></a></li>
-        <li><a class="page" href="myths_debunked.html"><b>Myths Debunked</b></a></li>
-        <li><a class="page" href="us_language_history.html"><b>US Language History</b></a></li>
-        <li><a class="page selected" id="quizPage"><b>Quiz</b></a></li>
+        <li class="nav"><a class="page" href="index.html"><b>Home</b></a></li>
+        <li class="nav"><a class="page" href="myths_debunked.html"><b>Myths Debunked</b></a></li>
+        <li class="nav"><a class="page" href="us_language_history.html"><b>US Language History</b></a></li>
+        <li class="nav"><a class="page selected" id="quizPage"><b>Quiz</b></a></li>
       </ul>
     </nav>
   </header>
@@ -24,13 +24,13 @@
   <body>
     <main>
       
-	  <div class="grid-container">
-			<div name="leftSide" class="grid-item">
+	  <div id="quizGrid" class="grid-container">
+			<div id="leftSide" class="grid-item">
 			</div>
 
 		  <div class="quiz">
 			<h1>Quiz</h1>
-			<form id="quiz" action="results.html">
+			<form id="quiz" action="results.php" method="post">
 			  <h3 id="question">
 				1. What is the official language of the United States?
 			  </h3>
@@ -126,7 +126,7 @@
 			</form>
 		  </div>
 		  
-		  <div name="rightSide" class="grid-item">
+		  <div id="rightSide" class="grid-item">
 			</div>
     </main>
 	<script src="script.js"></script>
