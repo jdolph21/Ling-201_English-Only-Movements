@@ -81,6 +81,11 @@ main.contentGrid {
 	filter: brightness(50%);
 }
 
+h1.title {
+	text-align: center;
+	justify-content: center;
+}
+
 .ulh_title {
 	position:absolute;
 	top: 5em;
@@ -127,7 +132,15 @@ main.contentGrid {
 
 .grid-item {
 	display: inline-grid;
+	height: 100%;
 }
+
+.myth, .fact {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
 
 #quizGrid {
 	grid-template-columns: 20% 60% 20%;
