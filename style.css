@@ -53,7 +53,11 @@ nav li {
 	filter: brightness(50%);
 }
 
-/* <-------------- US Language History CSS --------------> */
+/* <---------------------------- US Language History CSS ----------------------------> */
+
+
+/* <-------------- Introduction --------------> */
+
 
 main.contentGrid {
 	display: grid;
@@ -116,6 +120,135 @@ main.contentGrid {
 	height: 2px;
 	width: 80%;
 }
+
+
+/* <-------------- Spanish --------------> */
+
+
+.spanish {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.spanish_title {
+	margin-bottom: 1em;
+}
+
+.santa_fe {
+	grid-area: santa_fe;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.spanish_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
+
+/* <-------------- French --------------> */
+
+
+.french {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.french_title {
+	margin-bottom: 1em;
+}
+
+.french_house {
+	grid-area: french_house;
+	width:100%;
+	height:100%;
+	object-fit:fill;
+}
+
+.french_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
+
+/* <-------------- Dutch --------------> */
+
+
+.dutch {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.dutch_title {
+	margin-bottom: 1em;
+}
+
+.dutch_houses {
+	grid-area: french_houses;
+	width:100%;
+	height:100%;
+	object-fit:fill;
+}
+
+.dutch_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
+
+/* <-------------- Swedish --------------> */
+
+
+.swedish {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.swedish_title {
+	margin-bottom: 1em;
+}
+
+.swedish_cabin {
+	grid-area: swedish_cabin;
+	width:100%;
+	height:100%;
+	object-fit:fill;
+}
+
+.swedish_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
 
 /* <-------------- Quiz CSS --------------> */
 
