@@ -8,7 +8,6 @@ html, body {
 	margin: 0;
 	width: 100%;
 	height: auto;
-	position: absolute;
 }
 
 .homePage {
@@ -20,13 +19,13 @@ nav {
 	background-color: #292C7B;
 	font-family: 'Lato', sans-serif;
 	text-align: right;
-	position:relative;
+	position: relative;
 	padding: 2.25em;
 	width: 100%;
 	box-sizing: border-box;
 }
 
-li {
+nav li {
 	list-style-type: none;
 	display: inline;
 	text-align:right;
@@ -54,7 +53,11 @@ li {
 	filter: brightness(50%);
 }
 
-/* <-------------- US Language History CSS --------------> */
+/* <---------------------------- US Language History CSS ----------------------------> */
+
+
+/* <-------------- Introduction --------------> */
+
 
 main.contentGrid {
 	display: grid;
@@ -66,111 +69,308 @@ main.contentGrid {
 }
 
 .ulh_content {
-	position: relative;
 	font-family: 'Lato', sans-serif;
 	background-color:white;
-	height: auto;
 }
 
-.intro {
+.intro_container {
+	position: relative;
 	text-align: center;
 }
 
 .new_amsterdam {
 	width:100%;
-	filter: brightness(50%);
-}
-
-h1.title {
-	text-align: center;
-	justify-content: center;
-}
-
-.ulh_title {
-	position:absolute;
-	top: 5em;
-  	left: 50%;
-	z-index:0;
-  	transform: translate(-50%, -50%);
-	text-decoration: underline;
-	text-underline-offset: 10px;
-	color:white;
+	filter: brightness(70%);
 }
 
 .intro_text {
 	position:absolute;
-	left: 50%;
-	z-index: 0;
-  	transform: translate(-50%, -50%);
-	font-size: 1.25rem;
-	width:80%;
+	top:5%;
+	left:5%;
+	width:90%;
+	height:90%;
+	z-index:0;
+	background-color:black;
+	filter: opacity(50%);
 	color:white;
+	justify-content: center;
+}
+
+.title {
+	margin-top: 15%;
+	margin-bottom: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	font-size:3rem;
+}
+
+.intro_info {
+	margin-bottom: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 .intro_divider {
-	justify-content: center;
-	margin:4em auto;
-	height:2px;
+	position:relative;
 	background-color:black;
-	width: 75%;
-	border-radius: 2px;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
 }
+
+
+/* <-------------- Spanish --------------> */
+
+
+.spanish {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.spanish_title {
+	margin-bottom: 1em;
+}
+
+.santa_fe {
+	grid-area: santa_fe;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.spanish_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
+
+/* <-------------- French --------------> */
+
+
+.french {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.french_title {
+	margin-bottom: 1em;
+}
+
+.french_house {
+	grid-area: french_house;
+	width:100%;
+	height:100%;
+	object-fit:fill;
+}
+
+.french_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
+
+/* <-------------- Dutch --------------> */
+
+
+.dutch {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.dutch_title {
+	margin-bottom: 1em;
+}
+
+.dutch_houses {
+	grid-area: french_houses;
+	width:100%;
+	height:100%;
+	object-fit:fill;
+}
+
+.dutch_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
+
+/* <-------------- Swedish --------------> */
+
+
+.swedish {
+	display: grid;
+	grid-template-columns:47.5% 47.5%;
+	grid-gap: 5%;
+	margin:0 5%;
+	text-align: center;
+}
+
+.swedish_title {
+	margin-bottom: 1em;
+}
+
+.swedish_cabin {
+	grid-area: swedish_cabin;
+	width:100%;
+	height:100%;
+	object-fit:fill;
+}
+
+.swedish_divider {
+	position:relative;
+	background-color:black;
+	border-radius:2px;
+	margin:4em auto;
+	height: 2px;
+	width: 80%;
+}
+
 
 /* <-------------- Quiz CSS --------------> */
 
 .quiz {
 	position:relative;
-	width: 50%;
+	width: 100%;
+	align-items:center;
+}
+
+.quizItem {
+	width:100%;
+	display: inline-grid;
+}
+
+.results {
+	position:relative;
+	width: 100%;
 	justify-content: center;
 }
 
-.grid-container {
+body.quiz, body.results {
+	background-color:#292C7B;
+}
+
+.resultsItem {
+	display: inline-grid;
+	height: 100%;
+	width:100%;
+}
+
+#quizGrid {
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 15% 15% 15% 15% 15% 5%;
+	display: inline-grid;
+	width: 100%;
+	align-items: center;
+	height:100%;
+	position:absolute;
+	top:40em;
+	color:white;
+}
+
+.questions {
+	justify-content: left;
+}
+
+.choices {
+	display: inline-grid;
+	grid-template-columns: 20% 80%;
+}
+
+#question1 {
+	grid-row:1;
+}
+
+#question2 {
+	grid-row:2;
+}
+
+#question3 {
+	grid-row:3;
+}
+
+#question4 {
+	grid-row:4;
+}
+
+#question5 {
+	grid-row:5;
+}
+
+.submit {
+	grid-row:6;
+	width:20%;
+	justify-content: center;
+}
+
+#resultsGrid {
+	grid-template-columns: 15% 70% 15%;
+	display: inline-grid;
+	width: 100%;
+	align-items: center;
+	color: white;
+}
+
+
+/* <--------- Myths debunked CSS ----------> */
+
+#mythsGrid {
+	grid-template-columns: 10% 37.5% 5% 37.5% 10%;
+	height:100%;
 	display: inline-grid;
 	width: 100%;
 	align-items: center;
 }
 
-.grid-item {
+#myths {
+	background-color: white;
+	height:100%;
+	margin: 5%;
+}
+
+#facts {
+	background-color: white;
+	height:100%;
+	margin: 5%;
+}
+
+.mythsItem {
 	display: inline-grid;
 	height: 100%;
+}
+
+.spacer {
+	height: 100%;
+	background-color: #292C7B;
 }
 
 .myth, .fact {
 	margin-left: 5%;
 	margin-right: 5%;
 }
-
-
-
-#quizGrid {
-	grid-template-columns: 20% 60% 20%;
-}
-
-#resultsGrid {
-	grid-template-columns: 15% 70% 15%;
-}
-
-#mythsGrid {
-	grid-template-columns: 10% 37.5% 5% 37.5% 10%;
-	height:100%;
-}
-
-#myths {
-	/*background-color: #595C9B;*/
-	height:100%;
-	/*color: white;*/
-}
-
-#facts {
-	/*background-color: #595C9B;*/
-	height:100%;
-	/*color:white;*/
-}
-
-.spacer {
-	background-color: #292C7B;
-}
-
 p {
 	display:inline-block;
 }
