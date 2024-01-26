@@ -254,19 +254,117 @@ main.contentGrid {
 
 .quiz {
 	position:relative;
-	width: 50%;
+	width: 100%;
+	align-items:center;
+}
+
+.quizItem {
+	width:100%;
+	display: inline-grid;
+}
+
+.results {
+	position:relative;
+	width: 100%;
 	justify-content: center;
 }
 
-.grid-container {
+body.quiz, body.results {
+	background-color:#292C7B;
+}
+
+.resultsItem {
+	display: inline-grid;
+	height: 100%;
+	width:100%;
+}
+
+#quizGrid {
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 15% 15% 15% 15% 15% 5%;
+	display: inline-grid;
+	width: 100%;
+	align-items: center;
+	height:100%;
+	position:absolute;
+	top:40em;
+	color:white;
+}
+
+.questions {
+	justify-content: left;
+}
+
+.choices {
+	display: inline-grid;
+	grid-template-columns: 20% 80%;
+}
+
+#question1 {
+	grid-row:1;
+}
+
+#question2 {
+	grid-row:2;
+}
+
+#question3 {
+	grid-row:3;
+}
+
+#question4 {
+	grid-row:4;
+}
+
+#question5 {
+	grid-row:5;
+}
+
+.submit {
+	grid-row:6;
+	width:20%;
+	justify-content: center;
+}
+
+#resultsGrid {
+	grid-template-columns: 15% 70% 15%;
+	display: inline-grid;
+	width: 100%;
+	align-items: center;
+	color: white;
+}
+
+
+/* <--------- Myths debunked CSS ----------> */
+
+#mythsGrid {
+	grid-template-columns: 10% 37.5% 5% 37.5% 10%;
+	height:100%;
 	display: inline-grid;
 	width: 100%;
 	align-items: center;
 }
 
-.grid-item {
+#myths {
+	background-color: white;
+	height:100%;
+	margin: 5%;
+}
+
+#facts {
+	background-color: white;
+	height:100%;
+	margin: 5%;
+}
+
+.mythsItem {
 	display: inline-grid;
 	height: 100%;
+}
+
+.spacer {
+	height: 100%;
+	background-color: #292C7B;
 }
 
 .myth, .fact {
@@ -275,29 +373,6 @@ main.contentGrid {
 }
 
 
-
-#quizGrid {
-	grid-template-columns: 20% 60% 20%;
-}
-
-#resultsGrid {
-	grid-template-columns: 15% 70% 15%;
-}
-
-#mythsGrid {
-	grid-template-columns: 10% 37.5% 5% 37.5% 10%;
-	height:100%;
-}
-
-#myths {
-	background-color: rgb(0, 0, 255);
-	height:100%;
-}
-
-#facts {
-	background-color: steelblue;
-	height:100%;
-}
 
 p {
 	display:inline-block;
