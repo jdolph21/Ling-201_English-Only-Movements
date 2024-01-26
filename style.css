@@ -1,7 +1,15 @@
+
+/* <---------------------------- General ----------------------------> */
+
+
 * {
 	margin:0;
 	padding:0;
 }
+
+
+/* <---------------------------- Home Page ----------------------------> */
+
 
 html, body {
 	padding: 0;
@@ -14,6 +22,10 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+
+/* <-------------- Nav Bar --------------> */
+
 
 nav {
 	background-color: #292C7B;
@@ -48,12 +60,17 @@ nav li {
 	border-radius: 1em;
 }
 
+
+/* <-------------- Home Page Content --------------> */
+
+
 .bigImage {
 	width:100%;
 	filter: brightness(50%);
 }
 
-/* <---------------------------- US Language History CSS ----------------------------> */
+
+/* <---------------------------- US Language History ----------------------------> */
 
 
 /* <-------------- Introduction --------------> */
@@ -98,11 +115,18 @@ main.contentGrid {
 
 .title {
 	margin-top: 15%;
-	margin-bottom: 15%;
 	margin-left: auto;
 	margin-right: auto;
 	width:80%;
 	font-size:3rem;
+}
+
+.intro_divider {
+	background-color:white;
+	border-radius: 2px;
+	margin: 5em auto;
+	height: 2px;
+	width: 20%;
 }
 
 .intro_info {
@@ -112,7 +136,7 @@ main.contentGrid {
 	width: 80%;
 }
 
-.intro_divider {
+.post_intro_divider {
 	position:relative;
 	background-color:black;
 	border-radius:2px;
@@ -250,7 +274,8 @@ main.contentGrid {
 }
 
 
-/* <-------------- Quiz CSS --------------> */
+/* <-------------- Quiz --------------> */
+
 
 .quiz {
 	position:relative;
@@ -273,8 +298,6 @@ main.contentGrid {
 	margin-left: 5%;
 	margin-right: 5%;
 }
-
-
 
 #quizGrid {
 	grid-template-columns: 20% 60% 20%;
