@@ -256,11 +256,13 @@ main.contentGrid {
 	position:relative;
 	width: 100%;
 	align-items:center;
+	height:auto;
 }
 
 .quizItem {
 	width:100%;
 	display: inline-grid;
+	height:auto;
 }
 
 .results {
@@ -279,25 +281,27 @@ body.quiz, body.results {
 	width:100%;
 }
 
+#question {
+	
+}
+
 #quizGrid {
-	grid-template-columns: 20% 60% 20%;
-	grid-template-rows: 15% 15% 15% 15% 15% 5%;
+	grid-template-columns: 15% 70% 15%;
 	display: inline-grid;
 	width: 100%;
-	align-items: center;
-	height:100%;
-	position:absolute;
-	top:40em;
-	color:white;
+	color: white;
 }
 
 .questions {
 	justify-content: left;
+	width:100%;
 }
 
 .choices {
 	display: inline-grid;
 	grid-template-columns: 20% 80%;
+	width: 100%;
+	
 }
 
 #question1 {
@@ -346,15 +350,17 @@ body.quiz, body.results {
 }
 
 #myths {
-	background-color: white;
 	height:100%;
-	margin: 5%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	color:white;
 }
 
 #facts {
-	background-color: white;
 	height:100%;
-	margin: 5%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	color:white;
 }
 
 .mythsItem {
