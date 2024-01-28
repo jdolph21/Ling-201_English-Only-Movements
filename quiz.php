@@ -34,7 +34,7 @@
 					$questions = array(
 									array("What is the official language of the United States?", "American", "Spanish", "English", "Albanian", "None of the Above"),
 									array("How many states have English as their official language?", "0-20", "21-30", "31-40", "41-50", "51-60"),
-									array("How many states more than one official language?", "0-5", "6-10", "11-15", "16-20", "21-25"),
+									array("How many states have more than one official language?", "0-5", "6-10", "11-15", "16-20", "21-25"),
 									array("How many languages are spoken in the United States?", "<10", "11-100", "101-200", "201-350", ">350"),
 									array("How many people are native speakers of a language other than English, in the United States?", "<10 million", "10-25 million", "25-50 million", "50-60 million", ">60 million")
 									);
@@ -44,7 +44,9 @@
 					foreach ($questions as $question) {
 						
 						echo "<div id='question" . $counter . "' class='quizItem questions'>";
-						echo "<h3>" . $counter . ". " . $question[0] . "</h3>";
+						$questionString = $counter . ". " . $question[0];
+						$questionString = str_pad($questionString, 2000);
+						echo "<h3>" . $questionString . "</h3>";
 						
 						
 						for ($i = 1; $i < count($question); $i++) {
