@@ -5,6 +5,7 @@
 * {
 	margin:0;
 	padding:0;
+	font-family: 'Lato', sans-serif;
 }
 
 
@@ -15,7 +16,7 @@ html, body {
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 .homePage {
@@ -280,7 +281,10 @@ main.contentGrid {
 .quiz {
 	position:relative;
 	width: 100%;
-	align-items:center;
+	height: 100%;
+	display: flex;
+	margin-left: 5em;
+	margin-right: 5em;
 	height:auto;
 }
 
@@ -312,20 +316,25 @@ body.quiz, body.results {
 
 #quizGrid {
 	grid-template-columns: 15% 70% 15%;
-	display: inline-grid;
+	display: flex;
 	width: 100%;
-	color: white;
+	height: 100%;
+	align-items: center;
+	background-color: white;
+	color: black;
 }
 
 .questions {
 	justify-content: left;
 	width:100%;
+	margin-top: 0.5em;
 }
 
 .choices {
-	display: inline-grid;
-	grid-template-columns: 20% 80%;
-	width: 100%;
+	padding-left: 3em;
+	display: flex;
+	gap: 1em;
+	width: auto;
 	
 }
 
@@ -350,6 +359,8 @@ body.quiz, body.results {
 }
 
 .submit {
+	margin-left: 2em;
+	margin-top: 0.5em;
 	grid-row:6;
 	width:20%;
 	justify-content: center;
@@ -360,7 +371,9 @@ body.quiz, body.results {
 	display: inline-grid;
 	width: 100%;
 	align-items: center;
-	color: white;
+	height: 100%;
+	background-color: white;
+	color: black;
 }
 
 
@@ -369,38 +382,44 @@ body.quiz, body.results {
 #mythsGrid {
 	grid-template-columns: 10% 37.5% 5% 37.5% 10%;
 	height:100%;
-	display: inline-grid;
+	display: grid;
 	width: 100%;
 	align-items: center;
 }
 
 #myths {
 	height:100%;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	color:white;
+	background-color:white;
+	color:black;
 }
 
 #facts {
 	height:100%;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	color:white;
+	background-color:white;
+	color:black;
 }
 
 .mythsItem {
-	display: inline-grid;
+	display: grid;
 	height: 100%;
 }
 
 .spacer {
 	height: 100%;
-	background-color: #292C7B;
+	background-color: #00719c;
+}
+
+.title {
+	text-align: center;
 }
 
 .myth, .fact {
-	margin-left: 5%;
-	margin-right: 5%;
+	text-align: cnter;
+	height: 4em;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-top: 3em;
+	border-top: black dotted;
 }
 p {
 	display:inline-block;

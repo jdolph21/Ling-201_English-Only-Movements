@@ -20,15 +20,15 @@
     </nav>
   </header>
   
-  <body class="quiz">
-    <main>
+  <body style="height:100%;">
+    <main style="height:100%;">
       
 	  <div id="quizGrid">
 			<div id="leftSide" class="spacer quizItem">
 			</div>
 
 		  <div class="quiz">
-			<h1>Quiz</h1>
+			<h1	 style="text-align: center;" class="quizItem">Quiz</h1>
 			<form id="quiz" action="results.php" method="post">
 				<?php 
 					$questions = array(
