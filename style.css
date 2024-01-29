@@ -22,6 +22,22 @@ html, body {
 .homePage {
 	margin: 0;
 	padding: 0;
+	background-image: url("images/englishOnly.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	filter: brightness(50%);
+}
+
+.homeImages {
+	height: 176px;
+}
+
+table {
+	padding: 2em;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 }
 
 
@@ -316,19 +332,32 @@ body.quiz, body.results {
 }
 
 #quizGrid {
-	grid-template-columns: 15% 70% 15%;
+	position: relative;
 	display: flex;
 	width: 100%;
 	height: 100%;
 	align-items: center;
+	justify-content: center;
 	background-color: white;
 	color: black;
 }
 
+#leftSide, #rightSide {
+	width: 15%;
+}
+
+.title {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	margin: 1em auto;
+}
+
 .questions {
+	position: relative;
 	justify-content: left;
 	width:100%;
-	margin-top: 0.5em;
+	margin: 1em auto;
 }
 
 .choices {
@@ -337,26 +366,6 @@ body.quiz, body.results {
 	gap: 1em;
 	width: auto;
 	
-}
-
-#question1 {
-	grid-row:1;
-}
-
-#question2 {
-	grid-row:2;
-}
-
-#question3 {
-	grid-row:3;
-}
-
-#question4 {
-	grid-row:4;
-}
-
-#question5 {
-	grid-row:5;
 }
 
 .submit {
@@ -381,7 +390,7 @@ body.quiz, body.results {
 /* <--------- Myths debunked CSS ----------> */
 
 #mythsGrid {
-	grid-template-columns: 10% 37.5% 5% 37.5% 10%;
+	grid-template-columns: 5% 43.75% 2.5% 43.75% 5%;
 	height:100%;
 	display: grid;
 	width: 100%;
@@ -401,7 +410,8 @@ body.quiz, body.results {
 }
 
 .mythsItem {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 }
 
@@ -415,12 +425,13 @@ body.quiz, body.results {
 }
 
 .myth, .fact {
-	text-align: cnter;
-	height: 4em;
-	margin-left: 15%;
-	margin-right: 15%;
-	padding-top: 3em;
-	border-top: black dotted;
+	text-align: center;
+	height: auto;
+	width: 70%;
+	margin: auto;
+	padding: 3em;
+	border-top: 5px dotted black;
+	display: inline;
 }
 p {
 	display:inline-block;

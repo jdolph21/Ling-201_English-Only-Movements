@@ -16,6 +16,7 @@
         <li class="nav"><a class="page" href="myths_debunked.html"><b>Myths Debunked</b></a></li>
         <li class="nav"><a class="page" href="us_language_history.html"><b>US Language History</b></a></li>
         <li class="nav"><a class="page selected" id="quizPage"><b>Quiz</b></a></li>
+		<li class="nav"><a download class="page" id="sources" href="sources.txt"><b>Sources</b></a></li>
       </ul>
     </nav>
   </header>
@@ -28,7 +29,7 @@
 			</div>
 
 		  <div class="quiz">
-			<h1	 style="text-align: center;" class="quizItem">Quiz</h1>
+			<h1 class="quizItem title">Quiz</h1>
 			<form id="quiz" action="results.php" method="post">
 				<?php 
 					$questions = array(
