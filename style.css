@@ -171,17 +171,36 @@ main.contentGrid {
 	grid-template-columns:47.5% 47.5%;
 	grid-gap: 5%;
 	margin:0 5%;
-	text-align: center;
+	text-align: left;
 }
 
 .spanish_title {
 	margin-bottom: 1em;
+	text-align: center;
+}
+
+.spanish_list {
+	list-style-type: none;
+}
+
+.spanish_bullet {
+	margin-top: 1em;
+}
+
+.spanish_img {
+	display: grid;
+	grid-template-rows: 50% 50%;
 }
 
 .santa_fe {
-	grid-area: santa_fe;
-	width:100%;
-	height:100%;
+	width: 95%;
+	height:95%;
+	object-fit:cover;
+}
+
+.san_antonio_mission {
+	width:95%;
+	height:95%;
 	object-fit: cover;
 }
 
@@ -189,7 +208,7 @@ main.contentGrid {
 	position:relative;
 	background-color:black;
 	border-radius:2px;
-	margin:4em auto;
+	margin:3em auto 4em auto;
 	height: 2px;
 	width: 80%;
 }
@@ -203,18 +222,27 @@ main.contentGrid {
 	grid-template-columns:47.5% 47.5%;
 	grid-gap: 5%;
 	margin:0 5%;
-	text-align: center;
+	text-align: left;
 }
 
 .french_title {
 	margin-bottom: 1em;
+	text-align: center;
+}
+
+.french_list {
+	list-style-type: none;
+}
+
+.french_bullet {
+	margin-top: 1em;
 }
 
 .french_house {
 	grid-area: french_house;
 	width:100%;
 	height:100%;
-	object-fit:fill;
+	object-fit:contain;
 }
 
 .french_divider {
@@ -235,18 +263,27 @@ main.contentGrid {
 	grid-template-columns:47.5% 47.5%;
 	grid-gap: 5%;
 	margin:0 5%;
-	text-align: center;
+	text-align: left;
 }
 
 .dutch_title {
 	margin-bottom: 1em;
+	text-align: center;
+}
+
+.dutch_list {
+	list-style-type: none;
+}
+
+.dutch_bullet {
+	margin-top: 1em;
 }
 
 .dutch_houses {
 	grid-area: french_houses;
 	width:100%;
 	height:100%;
-	object-fit:fill;
+	object-fit:contain;
 }
 
 .dutch_divider {
@@ -267,10 +304,22 @@ main.contentGrid {
 	grid-template-columns:47.5% 47.5%;
 	grid-gap: 5%;
 	margin:0 5%;
-	text-align: center;
+	text-align: left;
 }
 
 .swedish_title {
+	margin-bottom: 1em;
+}
+
+.swedish_info {
+	margin-bottom: 1em;
+}
+
+.swedish_list {
+	list-style-type: none;
+}
+
+.swedish_bullet {
 	margin-bottom: 1em;
 }
 
@@ -278,7 +327,7 @@ main.contentGrid {
 	grid-area: swedish_cabin;
 	width:100%;
 	height:100%;
-	object-fit:fill;
+	object-fit:contain;
 }
 
 .swedish_divider {
@@ -325,10 +374,6 @@ body.quiz, body.results {
 	display: inline-grid;
 	height: 100%;
 	width:100%;
-}
-
-#question {
-	
 }
 
 #quizGrid {
