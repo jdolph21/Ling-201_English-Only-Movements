@@ -48,13 +48,13 @@
 				}
 				?>
 				
-				<h1>
+				<h1 class="answers_title">
 					Answers
 				</h1>
 				
 				<br/>
 				
-				<?php echo "<p> Score: " . $score . "/" . $questions . "</p>";?>
+				<?php echo "<p class='quiz_score'> Score: " . $score . "/" . $questions . "</p>";?>
 				
 				<br />
 				<div id="answer1">

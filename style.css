@@ -430,8 +430,13 @@ body.quiz, body.results {
 	color: black;
 }
 
+.answers_title {
+font: 1em sans-serif;
+}
+
 
 /* <--------- Myths debunked CSS ----------> */
+
 
 #mythsGrid {
 	grid-template-columns: 5% 43.75% 2.5% 43.75% 5%;
