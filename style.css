@@ -344,7 +344,6 @@ main.contentGrid {
 
 
 .quiz {
-	top: auto;
 	position:relative;
 	width: 100%;
 	height: 100%;
@@ -353,7 +352,6 @@ main.contentGrid {
 	margin-left: 5em;
 	margin-right: 5em;
 	height:auto;
-	margin-top: 5em;
 }
 
 .quizItem {
@@ -378,12 +376,17 @@ body.quiz, body.results {
 	width:100%;
 }
 
-#quizGrid {
+.quizScore {
+	text-align: center;
+}
+
+.quizGrid {
 	position: relative;
 	display: flex;
 	width: 100%;
 	height: 130%;
 	align-items: center;
+	gap: 1em;
 	justify-content: center;
 	background-color: white;
 	color: black;
@@ -398,7 +401,8 @@ body.quiz, body.results {
 	position: relative;
 	justify-content: center;
 	text-align: center;
-	margin: 1em auto;
+	margin: 2em auto;
+	padding: 2em;
 }
 
 .questions {

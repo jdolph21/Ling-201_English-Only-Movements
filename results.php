@@ -20,6 +20,7 @@
   
   <body class="results">
     <main>
+		
 		<div id="resultsGrid">
 			<div id="leftSide" class="resultsItem spacer">
 			</div>
@@ -48,13 +49,16 @@
 				}
 				?>
 				
-				<h1>
-					Answers
-				</h1>
+		<h1 class="quiz_title">
+			Answers
+		</h1>
+		<?php echo "<p class='quizScore'> Score: " . $score . "/" . $questions . "</p>";?>
+				
+				
 				
 				<br/>
 				
-				<?php echo "<p> Score: " . $score . "/" . $questions . "</p>";?>
+				
 				
 				<br />
 				<div id="answer1">
