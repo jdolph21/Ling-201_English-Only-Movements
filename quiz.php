@@ -24,7 +24,7 @@
   <body style="height:100%;">
     <main style="height:100%;">
       
-	  <div id="quizGrid">
+	  <div class="quizGrid">
 			<div id="leftSide" class="spacer quizItem">
 			</div>
 
