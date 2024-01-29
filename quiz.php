@@ -29,7 +29,7 @@
 			</div>
 
 		  <div class="quiz">
-			<h1 class="quizItem title">Quiz</h1>
+			<h1 class="quizItem quiz_title">Quiz</h1>
 			<form id="quiz" action="results.php" method="post">
 				<?php 
 					$questions = array(

@@ -131,7 +131,7 @@ main.contentGrid {
 }
 
 .title {
-	margin-top: 15%;
+	margin-top: 14%;
 	margin-left: auto;
 	margin-right: auto;
 	width:80%;
@@ -141,13 +141,12 @@ main.contentGrid {
 .intro_divider {
 	background-color:white;
 	border-radius: 2px;
-	margin: 5em auto;
+	margin: 6em auto;
 	height: 2px;
 	width: 20%;
 }
 
 .intro_info {
-	margin-bottom: 10%;
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
@@ -391,7 +390,7 @@ body.quiz, body.results {
 	width: 15%;
 }
 
-.title {
+.quiz_title {
 	position: relative;
 	justify-content: center;
 	text-align: center;
