@@ -55,20 +55,7 @@
 				
 				<br/>
 				
-				<?php echo "<p class='quiz_score'> Score: " . $score . "/" . $questions . "</p>";?>
-=======
-		<h1 class="quiz_title">
-			Answers
-		</h1>
-		<?php echo "<p class='quizScore'> Score: " . $score . "/" . $questions . "</p>";?>
-				
-				
-				
-				<br/>
-				
-				
->>>>>>> 93ad2f794e4486a1eb36eb80da4052206a5ba7f1
-				
+				<?php echo "<p class='quiz_score'> Score: " . $score . "/" . $questions . "</p>";?>	
 				<br />
 				<div id="answer1">
 					<h3>
